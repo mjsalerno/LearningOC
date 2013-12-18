@@ -10,6 +10,7 @@
 		F6CA3525186202A600EA8764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CA3524186202A600EA8764 /* Foundation.framework */; };
 		F6CA3528186202A600EA8764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA3527186202A600EA8764 /* main.m */; };
 		F6CA352C186202A600EA8764 /* LearningOC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6CA352B186202A600EA8764 /* LearningOC.1 */; };
+		F6CA353818620F7200EA8764 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA353718620F7200EA8764 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		F6CA3527186202A600EA8764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6CA352A186202A600EA8764 /* LearningOC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearningOC-Prefix.pch"; sourceTree = "<group>"; };
 		F6CA352B186202A600EA8764 /* LearningOC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LearningOC.1; sourceTree = "<group>"; };
+		F6CA353618620F7200EA8764 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		F6CA353718620F7200EA8764 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		F6CA3526186202A600EA8764 /* LearningOC */ = {
 			isa = PBXGroup;
 			children = (
+				F6CA353618620F7200EA8764 /* Fraction.h */,
+				F6CA353718620F7200EA8764 /* Fraction.m */,
 				F6CA3527186202A600EA8764 /* main.m */,
 				F6CA352B186202A600EA8764 /* LearningOC.1 */,
 				F6CA3529186202A600EA8764 /* Supporting Files */,
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6CA3528186202A600EA8764 /* main.m in Sources */,
+				F6CA353818620F7200EA8764 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
