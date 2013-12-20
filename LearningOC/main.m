@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
+#import "SynthFrac.h"
 
 int main(int argc, const char * argv[])
 {
@@ -22,16 +23,25 @@ int main(int argc, const char * argv[])
         
         [frac print];
         
-        printf("How many time would you like me to print? ");
-        int loop = 0;
-        scanf("%i", &loop);
-        
-        for(loop--; loop >= 0; --loop) {
-            printf("loops left: %d\n", loop);
-        }
+//        printf("How many time would you like me to print? ");
+//        int loop = 0;
+//        scanf("%i", &loop);
+//        
+//        for(loop--; loop >= 0; --loop) {
+//            printf("loops left: %d\n", loop);
+//        }
         
         //this is bad
         //NSLog("frac with log: %i/%i", [frac numerator], [frac denominator]);
+        
+        SynthFrac *sf = [SynthFrac new];
+//        [sf setNumerator:2];
+//        [sf setDenominator:3];
+        
+        [sf setFrac:5 over:3];
+        [sf print];
+        
+        NSLog(@"this was sf: %f", [sf ToNum]);
         
     }
     return 0;
