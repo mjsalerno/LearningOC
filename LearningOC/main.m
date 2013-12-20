@@ -22,6 +22,17 @@ int main(int argc, const char * argv[])
         
         [frac print];
         
+        printf("How many time would you like me to print? ");
+        int loop = 0;
+        scanf("%i", &loop);
+        
+        for(loop--; loop >= 0; --loop) {
+            printf("loops left: %d\n", loop);
+        }
+        
+        //this is bad
+        //NSLog("frac with log: %i/%i", [frac numerator], [frac denominator]);
+        
     }
     return 0;
 }
