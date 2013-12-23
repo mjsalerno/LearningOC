@@ -9,5 +9,5 @@
 #import "Vehicle.h"
 
 @interface Car : Vehicle
-
+@property int numWheels;
 @end
