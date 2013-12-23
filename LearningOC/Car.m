@@ -10,5 +10,8 @@
 
 @implementation Car
 
+-(int) getNumWheels {
+    return self.numWheels;
+}
 
 @end

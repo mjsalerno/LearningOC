@@ -10,4 +10,7 @@
 
 @interface Car : Vehicle
 @property int numWheels;
+
+-(int) getNumWheels;
+
 @end
