@@ -41,7 +41,16 @@ int main(int argc, const char * argv[])
         [sf setFrac:5 over:3];
         [sf print];
         
-        NSLog(@"this was sf: %f", [sf ToNum]);
+        SynthFrac *sf1 = [SynthFrac new];
+        SynthFrac *sf2 = [SynthFrac new];
+        
+        [sf1 setFrac:2 over:5];
+        [sf2 setFrac:3 over:5];
+        
+        [sf1 add:sf2];
+        
+        NSLog(@"this was sf: %f", [sf1 ToNum]);
+        NSLog(@"%i/%i", sf1.numerator, sf1.denominator);
         
     }
     return 0;

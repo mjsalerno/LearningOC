@@ -15,5 +15,6 @@
 -(void) print;
 -(double) ToNum;
 -(void) setFrac: (int)top over:(int)bot;
+-(void) add: (SynthFrac *) frac;
 
 @end

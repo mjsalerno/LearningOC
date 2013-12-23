@@ -31,4 +31,23 @@
     self.denominator = bot;
 }
 
+// A     C     AD + CB
+//--- + --- = ---------
+// B     D        BD
+-(void) add: (SynthFrac *) frac {
+    int top, bot;
+    
+    if(self.denominator == frac.denominator) {
+        bot = self.denominator;
+        top = (self.numerator + frac.numerator);
+    } else {
+        bot = self.denominator * frac.denominator;
+        top = (self.numerator * frac.denominator) + (frac.numerator * self.denominator);
+    }
+    
+    self.numerator = top;
+    self.denominator = bot;
+}
+
+
 @end
