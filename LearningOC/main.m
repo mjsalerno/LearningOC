@@ -56,6 +56,13 @@ int main(int argc, const char * argv[])
         NSLog(@"this was sf: %f", [sf1 ToNum]);
         NSLog(@"%i/%i", sf1.numerator, sf1.denominator);
         
+        Vehicle *v = [Vehicle new];
+        v.numOfCylinders = 6;
+        
+        Car *c = [Car new];
+        c.numWheels = 4;
+        c.numOfCylinders = 4;
+        
         
     }
     return 0;
