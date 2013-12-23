@@ -49,5 +49,16 @@
     self.denominator = bot;
 }
 
+-(instancetype) init: (int)top over:(int)bot {
+    self = [super init];
+    
+    if(self) {
+        self.numerator = top;
+        self.denominator = bot;
+    }
+    
+    return self;
+}
+
 
 @end

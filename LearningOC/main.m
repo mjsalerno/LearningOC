@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
 #import "SynthFrac.h"
+#import "Vehicle.h"
+#import "Car.h"
 
 int main(int argc, const char * argv[])
 {
@@ -41,8 +43,10 @@ int main(int argc, const char * argv[])
         [sf setFrac:5 over:3];
         [sf print];
         
-        SynthFrac *sf1 = [SynthFrac new];
+        SynthFrac *sf1 = [[SynthFrac alloc] init:2 over:5];
         SynthFrac *sf2 = [SynthFrac new];
+        
+
         
         [sf1 setFrac:2 over:5];
         [sf2 setFrac:3 over:5];
@@ -51,6 +55,7 @@ int main(int argc, const char * argv[])
         
         NSLog(@"this was sf: %f", [sf1 ToNum]);
         NSLog(@"%i/%i", sf1.numerator, sf1.denominator);
+        
         
     }
     return 0;
