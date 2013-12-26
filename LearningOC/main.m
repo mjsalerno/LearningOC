@@ -61,7 +61,7 @@ int main(int argc, const char * argv[])
         
         Car *c = [Car new];
         c.numWheels = 4;
-        c.numOfCylinders = 4;
+        c.numOfCylinders 
         
         NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);
         
