@@ -64,6 +64,9 @@ int main(int argc, const char * argv[])
         c.numOfCylinders = 4;
         
         NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);
+
+        //----------------------------STUFF WITHOUT A MAC------------------------------
+        
         
         
     }
