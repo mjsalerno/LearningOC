@@ -133,7 +133,9 @@ int main(int argc, const char * argv[]) {
         n++;
         NSLog(@"this is the typdef n: %i", n);
 
-        
+        //typedef to make enums easy
+        typedef enum { east, west, south, north } Direction;
+        Direction step1;
         
     }
     return 0;
