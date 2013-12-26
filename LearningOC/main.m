@@ -12,6 +12,23 @@
 #import "Vehicle.h"
 #import "Car.h"
 
+//adding methods to an existing class
+@interface Fraction (MathOps)
+-(Fraction *) mul: (Fraction *) f;
+@end
+
+@implementation Fraction (MathOps)
+-(Fraction *) mul: (Fraction *) f {
+   Fraction  *result = [[Fraction alloc] init];
+
+   result.numerator = self.numerator * f.numerator;
+   result.denominator = self.denominator * f.denominator;
+   [result reduce];
+
+   return result;
+}
+@end
+
 //global var can be used in other files
 int gGlobalVar = -1;
 //use 
@@ -25,13 +42,16 @@ int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
         
-        Fraction *frac = [Fraction new];
-        [frac setNumerator:(10)];
-        [frac setDenominator:(5)];
+        Fraction *frac1 = [Fraction new];
+        [frac1 setNumerator:(10)];
+        [frac1 setDenominator:(5)];
         
-        [frac setVals:15 :5];
+        [frac1 setVals:15 :5];
         
-        [frac print];
+        [frac1 print];
+
+        Fraction *frac2 = [Fraction new];
+        [frac2 setVals:15 :5];
         
 //        printf("How many time would you like me to print? ");
 //        int loop = 0;
@@ -136,6 +156,11 @@ int main(int argc, const char * argv[]) {
         //typedef to make enums easy
         typedef enum { east, west, south, north } Direction;
         Direction step1;
+
+        //trying the new added methods
+        Fraction *fromMult = [frac1 mul: frac2];
+        [frac1 print]; NSLog (@"  *"); [frac2 print]; NSLog (@"-----");
+        [fromMult print];
         
     }
     return 0;
