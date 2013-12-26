@@ -87,6 +87,44 @@ int main(int argc, const char * argv[]) {
 
         NSLog (@"Execution continues");
 
+        //testing out enums
+        enum Color {RED = 5, GREEN = 10, BLUE = 15};
+
+        enum Color b = BLUE;
+        enum Color r = RED;
+        enum Color g = GREEN;
+
+        if(b == r) {
+            NSLog (@"This is bad, b == r was true");   
+        }
+
+        if(b == BLUE) {
+            NSLog (@"b == BLUE");
+        }
+
+        if(RED == RED) {
+            NSLog (@"RED == RED was true");   
+        }
+
+        if(RED == 5) {
+            NSLog (@"RED == 5 was true");   
+        }
+
+        //switch statement with enums
+        switch(b) {
+            case BLUE:
+                NSLog (@"got BLUE from switch");
+                break;
+            case RED:
+                NSLog (@"got RED from switch");
+                break;
+            case GREEN:
+                NSLog (@"got GREEN from switch");
+                break;
+            default:
+                NSLog (@"SOMETHING WENT WRONG WITH THE SWITCH");
+                break;
+        }
         
     }
     return 0;
