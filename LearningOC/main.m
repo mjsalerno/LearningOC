@@ -6,11 +6,18 @@
 //  Copyright (c) 2013 John Smith. All rights reserved.
 //
 
+/* NOTES
+protocol -> interface
+conformsTo -> implements
+encapsulate -> Composite Object
+*/
+
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
 #import "SynthFrac.h"
 #import "Vehicle.h"
 #import "Car.h"
+#define FIVE 5
 
 //adding methods to an existing class
 //moved into own file
@@ -50,14 +57,14 @@ int main(int argc, const char * argv[]) {
         
         Fraction *frac1 = [Fraction new];
         [frac1 setNumerator:(10)];
-        [frac1 setDenominator:(5)];
+        [frac1 setDenominator:(FIVE)];
         
-        [frac1 setVals:15 :5];
+        [frac1 setVals:15 :FIVE];
         
         [frac1 print];
 
         Fraction *frac2 = [Fraction new];
-        [frac2 setVals:15 :5];
+        [frac2 setVals:15 :FIVE];
         
 //        printf("How many time would you like me to print? ");
 //        int loop = 0;
