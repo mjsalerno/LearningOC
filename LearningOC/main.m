@@ -7,9 +7,9 @@
 //
 
 /* NOTES
-protocol -> interface
-conformsTo -> implements
-encapsulate -> Composite Object
+protocol ---------> interface
+conformsTo -------> implements
+Composite Object -> encapsulate
 */
 
 #import <Foundation/Foundation.h>
@@ -174,6 +174,14 @@ int main(int argc, const char * argv[]) {
         Fraction *fromMult = [frac1 mul: frac2];
         [frac1 print]; NSLog (@"  *"); [frac2 print]; NSLog (@"-----");
         [fromMult print];
+
+        //block testing
+        void (^printMessage)(void) =
+            ^(void) {
+                NSLog (@"Programming is fun, but not in Objective C.");
+            };
+
+      printMessage ();
         
     }
     return 0;
