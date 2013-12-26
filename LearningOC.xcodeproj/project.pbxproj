@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6652ADB1868AB9300345FD3 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADA1868AB9300345FD3 /* Vehicle.m */; };
 		F6652ADE1868AD6900345FD3 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADD1868AD6900345FD3 /* Car.m */; };
+		F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */; };
 		F69323911864F0CC00B54BB5 /* SynthFrac.m in Sources */ = {isa = PBXBuildFile; fileRef = F69323901864F0CC00B54BB5 /* SynthFrac.m */; };
 		F6CA3525186202A600EA8764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CA3524186202A600EA8764 /* Foundation.framework */; };
 		F6CA3528186202A600EA8764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CA3527186202A600EA8764 /* main.m */; };
@@ -34,6 +35,8 @@
 		F6652ADA1868AB9300345FD3 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		F6652ADC1868AD6900345FD3 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		F6652ADD1868AD6900345FD3 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		F66E79B8186CCFFA00A88B6B /* SynthFrac+MathOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SynthFrac+MathOps.h"; path = "../SynthFrac+MathOps.h"; sourceTree = "<group>"; };
+		F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SynthFrac+MathOps.m"; path = "../SynthFrac+MathOps.m"; sourceTree = "<group>"; };
 		F693238F1864F0CC00B54BB5 /* SynthFrac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthFrac.h; sourceTree = "<group>"; };
 		F69323901864F0CC00B54BB5 /* SynthFrac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynthFrac.m; sourceTree = "<group>"; };
 		F6CA3521186202A600EA8764 /* LearningOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearningOC; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +88,8 @@
 		F6CA3526186202A600EA8764 /* LearningOC */ = {
 			isa = PBXGroup;
 			children = (
+				F66E79B8186CCFFA00A88B6B /* SynthFrac+MathOps.h */,
+				F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */,
 				F6652ADD1868AD6900345FD3 /* Car.m */,
 				F6652ADC1868AD6900345FD3 /* Car.h */,
 				F6CA353618620F7200EA8764 /* Fraction.h */,
@@ -164,6 +169,7 @@
 				F69323911864F0CC00B54BB5 /* SynthFrac.m in Sources */,
 				F6CA3528186202A600EA8764 /* main.m in Sources */,
 				F6CA353818620F7200EA8764 /* Fraction.m in Sources */,
+				F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

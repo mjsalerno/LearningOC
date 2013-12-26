@@ -18,30 +18,8 @@ composite object -> encapsulate
 #import "SynthFrac.h"
 #import "Vehicle.h"
 #import "Car.h"
+#import "SynthFrac+MathOps.h"
 #define FIVE 5
-
-//adding methods to an existing class
-//moved into own file
-/*
-@interface Fraction (MathOps)
--(Fraction *) mul: (Fraction *) f;
-@end
-*/
-
-//moved into own file.
-/*
-@implementation Fraction (MathOps)
--(Fraction *) mul: (Fraction *) f {
-   Fraction  *result = [[Fraction alloc] init];
-
-   result.numerator = self.numerator * f.numerator;
-   result.denominator = self.denominator * f.denominator;
-   [result reduce];
-
-   return result;
-}
-@end
-*/
 
 //global var can be used in other files
 int gGlobalVar = -1;
@@ -168,12 +146,13 @@ int main(int argc, const char * argv[]) {
         //typedef to make enums easy
         typedef enum { east, west, south, north } Direction;
         Direction step1;
+        step1 = west;
 
         //----------------------------STUFF WITHOUT A MAC------------------------------
 
         //trying the new added methods
-        Fraction *fromMult = [frac1 mul: frac2];
-        [frac1 print]; NSLog (@"  *"); [frac2 print]; NSLog (@"-----");
+        SynthFrac *fromMult = [sf1 mul: sf2];
+        [sf1 print]; NSLog (@"  *"); [sf2 print]; NSLog (@"-----");
         [fromMult print];
 
         //block testing
