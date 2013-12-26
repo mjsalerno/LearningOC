@@ -69,7 +69,7 @@ int main(int argc, const char * argv[]) {
         
         Car *c = [Car new];
         c.numWheels = 4;
-        c.numOfCylinders 
+        c.numOfCylinders =4;
         
         NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);
 
@@ -127,7 +127,7 @@ int main(int argc, const char * argv[]) {
         }
 
         //testing typdef
-        typdef int Counter;
+        typedef int Counter;
         Counter n;
         n = 0;
         n++;
