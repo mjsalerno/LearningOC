@@ -7,9 +7,10 @@
 //
 
 /* NOTES
+block ------------> anonymous function
 protocol ---------> interface
 conformsTo -------> implements
-Composite Object -> encapsulate
+composite object -> encapsulate
 */
 
 #import <Foundation/Foundation.h>
