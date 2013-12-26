@@ -12,8 +12,16 @@
 #import "Vehicle.h"
 #import "Car.h"
 
-int main(int argc, const char * argv[])
-{
+//global var can be used in other files
+int gGlobalVar = -1;
+//use 
+//extern int gGlobalVar;
+//to use it in another file
+
+//can't be used in other files
+static int gNoSoGlobalVar;
+
+int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
         
@@ -64,7 +72,70 @@ int main(int argc, const char * argv[])
         c.numOfCylinders 
         
         NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);
+
+        //----------------------------STUFF WITHOUT A MAC------------------------------
         
+        //testing try catch
+        NSArray *myArray = [NSArray array];
+
+        @try {
+            [myArray objectAtIndex: 2];
+        }
+        @catch (NSException *exception) {
+            NSLog (@"Caught %@%@", exception.name, exception.reason);
+        }
+
+        NSLog (@"Execution continues");
+
+        //testing out enums
+        enum Color {RED = 5, GREEN = 10, BLUE = 15};
+
+        enum Color b = BLUE;
+        enum Color r = RED;
+        enum Color g = GREEN;
+
+        if(b == r) {
+            NSLog (@"This is bad, b == r was true");   
+        }
+
+        if(b == BLUE) {
+            NSLog (@"b == BLUE");
+        }
+
+        if(RED == RED) {
+            NSLog (@"RED == RED was true");   
+        }
+
+        if(RED == 5) {
+            NSLog (@"RED == 5 was true");   
+        }
+
+        //switch statement with enums
+        switch(b) {
+            case BLUE:
+                NSLog (@"got BLUE from switch");
+                break;
+            case RED:
+                NSLog (@"got RED from switch");
+                break;
+            case GREEN:
+                NSLog (@"got GREEN from switch");
+                break;
+            default:
+                NSLog (@"SOMETHING WENT WRONG WITH THE SWITCH");
+                break;
+        }
+
+        //testing typdef
+        typdef int Counter;
+        Counter n;
+        n = 0;
+        n++;
+        NSLog(@"this is the typdef n: %i", n);
+
+        //typedef to make enums easy
+        typedef enum { east, west, south, north } Direction;
+        Direction step1;
         
     }
     return 0;
