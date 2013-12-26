@@ -91,9 +91,7 @@ int main(int argc, const char * argv[]) {
         c.numWheels = 4;
         c.numOfCylinders =4;
         
-        NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);
-
-        //----------------------------STUFF WITHOUT A MAC------------------------------
+        NSLog(@"bool: %d", [c isKindOfClass:[Vehicle class]]);        
         
         //testing try catch
         NSArray *myArray = [NSArray array];
@@ -156,6 +154,8 @@ int main(int argc, const char * argv[]) {
         //typedef to make enums easy
         typedef enum { east, west, south, north } Direction;
         Direction step1;
+
+        //----------------------------STUFF WITHOUT A MAC------------------------------
 
         //trying the new added methods
         Fraction *fromMult = [frac1 mul: frac2];
