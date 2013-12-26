@@ -12,7 +12,14 @@
 #import "Vehicle.h"
 #import "Car.h"
 
+//global var can be used in other files
 int gGlobalVar = -1;
+//use 
+//extern int gGlobalVar;
+//to use it in another file
+
+//can't be used in other files
+static int gNoSoGlobalVar;
 
 int main(int argc, const char * argv[]) {
 
