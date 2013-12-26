@@ -125,6 +125,15 @@ int main(int argc, const char * argv[]) {
                 NSLog (@"SOMETHING WENT WRONG WITH THE SWITCH");
                 break;
         }
+
+        //testing typdef
+        typdef int Counter;
+        Counter n;
+        n = 0;
+        n++;
+        NSLog(@"this is the typdef n: %i", n);
+
+        
         
     }
     return 0;
