@@ -12,8 +12,9 @@
 #import "Vehicle.h"
 #import "Car.h"
 
-int main(int argc, const char * argv[])
-{
+int gGlobalVar = -1;
+
+int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
         
