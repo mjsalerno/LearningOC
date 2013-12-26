@@ -13,10 +13,15 @@
 #import "Car.h"
 
 //adding methods to an existing class
+//moved into own file
+/*
 @interface Fraction (MathOps)
 -(Fraction *) mul: (Fraction *) f;
 @end
+*/
 
+//moved into own file.
+/*
 @implementation Fraction (MathOps)
 -(Fraction *) mul: (Fraction *) f {
    Fraction  *result = [[Fraction alloc] init];
@@ -28,6 +33,7 @@
    return result;
 }
 @end
+*/
 
 //global var can be used in other files
 int gGlobalVar = -1;
