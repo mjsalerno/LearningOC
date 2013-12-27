@@ -11,4 +11,5 @@
 
 @interface SynthFrac (MathOps)
 -(SynthFrac *) mul: (SynthFrac *) f;
+-(void) wasteTime: (long) i;
 @end

@@ -18,4 +18,8 @@
     
     return result;
 }
+
+-(void) wasteTime: (long) i {
+    for (long n = 0; n < i; n++) {}
+}
 @end

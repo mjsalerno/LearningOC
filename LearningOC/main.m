@@ -156,7 +156,14 @@ int main(int argc, const char * argv[]) {
                 NSLog (@"Programming is fun, but not in Objective C.");
             };
 
-      printMessage ();
+        printMessage ();
+        
+        NSDate *start = [NSDate date];
+        [sf1 wasteTime:9999999999];
+        NSDate *methodFinish = [NSDate date];
+        NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
+        
+        NSLog(@"Execution Time: %f", executionTime);
         
     }
     return 0;
