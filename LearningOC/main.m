@@ -28,11 +28,12 @@ int gGlobalVar = -1;
 //to use it in another file
 
 //can't be used in other files
-static int gNoSoGlobalVar;
+static int gNotSoGlobalVar = -1;
 
 int main(int argc, const char * argv[]) {
 
     @autoreleasepool {
+        gNotSoGlobalVar = 7;
         
         Fraction *frac1 = [Fraction new];
         [frac1 setNumerator:(10)];
@@ -112,16 +113,12 @@ int main(int argc, const char * argv[]) {
             NSLog (@"b == BLUE");
         }
 
-        if(RED == RED) {
-            NSLog (@"RED == RED was true");   
-        }
-
         if(RED == 5) {
             NSLog (@"RED == 5 was true");   
         }
 
         //switch statement with enums
-        switch(b) {
+        switch(g) {
             case BLUE:
                 NSLog (@"got BLUE from switch");
                 break;
@@ -147,8 +144,6 @@ int main(int argc, const char * argv[]) {
         typedef enum { east, west, south, north } Direction;
         Direction step1;
         step1 = west;
-
-        //----------------------------STUFF WITHOUT A MAC------------------------------
 
         //trying the new added methods
         SynthFrac *fromMult = [sf1 mul: sf2];
