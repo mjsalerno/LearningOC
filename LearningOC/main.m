@@ -20,6 +20,8 @@ composite object -> encapsulate
 #import "Vehicle.h"
 #import "Car.h"
 #import "SynthFrac+MathOps.h"
+#import "ReplaceMe.h"
+
 #define FIVE 5
 
 //global var can be used in other files
@@ -188,6 +190,11 @@ int main(int argc, const char * argv[]) {
         //cFunc();
         //Swizzle([, cFunc, notIt);
         //cFunc();
+        
+        ReplaceMe *rm = [ReplaceMe new];
+        [rm replaceMe];
+        Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
+        [rm replaceMe];
     }
     return 0;
 }

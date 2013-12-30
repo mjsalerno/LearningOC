@@ -10,4 +10,12 @@
 
 @implementation ReplaceMe
 
+-(void) replaceMe {
+    NSLog(@"REPLACE ME");
+}
+
+-(void) withMe {
+    NSLog(@"WITH ME");
+}
+
 @end
