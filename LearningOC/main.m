@@ -14,6 +14,7 @@ composite object -> encapsulate
 */
 
 #import <Foundation/Foundation.h>
+#import <objc/objc-class.h>
 #import "Fraction.h"
 #import "SynthFrac.h"
 #import "Vehicle.h"
@@ -29,6 +30,25 @@ int gGlobalVar = -1;
 
 //can't be used in other files
 static int gNotSoGlobalVar = -1;
+
+void cFunc() {
+    printf("howdy, imma c function\n");
+}
+
+void notIt() {
+    printf("his is not he one you wanted\n");
+}
+
+void Swizzle(Class c, SEL orig, SEL new) {
+    
+    Method origMethod = class_getInstanceMethod(c, orig);
+    Method newMethod = class_getInstanceMethod(c, new);
+    
+    if(class_addMethod(c, orig, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)))
+        class_replaceMethod(c, new, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+    else
+        method_exchangeImplementations(origMethod, newMethod);
+}
 
 int main(int argc, const char * argv[]) {
 
@@ -159,13 +179,17 @@ int main(int argc, const char * argv[]) {
         printMessage ();
         
         NSDate *start = [NSDate date];
-        [sf1 wasteTime:9999999999];
+        [sf1 wasteTime:9999999];
         NSDate *methodFinish = [NSDate date];
         NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:start];
         
         NSLog(@"Execution Time: %f", executionTime);
         
+        //cFunc();
+        //Swizzle([, cFunc, notIt);
+        //cFunc();
     }
     return 0;
 }
+
 

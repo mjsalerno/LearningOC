@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27007480186E04C6007A4FA1 /* MyLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2700747F186E04C6007A4FA1 /* MyLib.m */; };
+		2771C4961872026B00D21EE2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2771C4951872026B00D21EE2 /* ReplaceMe.m */; };
 		F6652ADB1868AB9300345FD3 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADA1868AB9300345FD3 /* Vehicle.m */; };
 		F6652ADE1868AD6900345FD3 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADD1868AD6900345FD3 /* Car.m */; };
 		F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		2700747E186E04C6007A4FA1 /* MyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLib.h; sourceTree = "<group>"; };
 		2700747F186E04C6007A4FA1 /* MyLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLib.m; sourceTree = "<group>"; };
+		2771C4941872026B00D21EE2 /* ReplaceMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceMe.h; sourceTree = "<group>"; };
+		2771C4951872026B00D21EE2 /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		F6652AD91868AB9300345FD3 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		F6652ADA1868AB9300345FD3 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		F6652ADC1868AD6900345FD3 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				F6652ADA1868AB9300345FD3 /* Vehicle.m */,
 				2700747E186E04C6007A4FA1 /* MyLib.h */,
 				2700747F186E04C6007A4FA1 /* MyLib.m */,
+				2771C4941872026B00D21EE2 /* ReplaceMe.h */,
+				2771C4951872026B00D21EE2 /* ReplaceMe.m */,
 			);
 			path = LearningOC;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				F6652ADE1868AD6900345FD3 /* Car.m in Sources */,
 				F6652ADB1868AB9300345FD3 /* Vehicle.m in Sources */,
 				F69323911864F0CC00B54BB5 /* SynthFrac.m in Sources */,
+				2771C4961872026B00D21EE2 /* ReplaceMe.m in Sources */,
 				F6CA3528186202A600EA8764 /* main.m in Sources */,
 				F6CA353818620F7200EA8764 /* Fraction.m in Sources */,
 				F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */,
