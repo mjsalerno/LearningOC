@@ -7,6 +7,7 @@
 //
 
 #import "MyLib.h"
+#import <objc/objc-class.h>
 
 
 @implementation MyLib
@@ -21,6 +22,26 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
     NSLog(@"objective c exit");
     
     return 0;
+}
+
+-(void) replacer {
+    NSLog(@"calling the replacer");
+}
+
+-(void) swizzleFunction: (SEL)func fromClass:(Class)c {
+    
+    SEL new = @selector(replacer);
+    
+    Method origMethod = class_getInstanceMethod(c, func);
+    Method newMethod = class_getInstanceMethod(self.class, new);
+    
+    if(class_addMethod(c, func, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)))
+        class_replaceMethod(c, new, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+    else
+        method_exchangeImplementations(origMethod, newMethod);
+
+    
+    
 }
 
 @end
