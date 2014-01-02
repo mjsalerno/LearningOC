@@ -8,6 +8,7 @@
 
 #import "MyLib.h"
 #import <objc/objc-class.h>
+#import "BlockInjection/BILib.h"
 
 
 @implementation MyLib
@@ -44,6 +45,24 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
 
     
     
+}
+
+-(void) swizzle2Function: (SEL)func fromClass:(Class)c {
+
+    //hook before
+    [BILib injectToClass:c selector:func preprocess:^{
+        
+        NSLog(@"this should be called before");
+        
+    }];
+    
+    //hook after
+    [BILib injectToClass:c selector:func postprocess:^{
+        
+        NSLog(@"This should be called after");
+        
+    }];
+
 }
 
 @end
