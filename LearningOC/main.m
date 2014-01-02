@@ -21,6 +21,7 @@ composite object -> encapsulate
 #import "Car.h"
 #import "SynthFrac+MathOps.h"
 #import "ReplaceMe.h"
+#import "MyLib.h"
 
 #define FIVE 5
 
@@ -192,8 +193,11 @@ int main(int argc, const char * argv[]) {
         //cFunc();
         
         ReplaceMe *rm = [ReplaceMe new];
+        MyLib *myLib = [MyLib new];
+        
         [rm replaceMe];
-        Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
+        //Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
+        [myLib swizzleFunction:@selector(replaceMe) fromClass:rm.class];
         [rm replaceMe];
     }
     return 0;
