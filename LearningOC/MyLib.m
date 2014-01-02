@@ -25,7 +25,9 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
 }
 
 -(void) replacer {
+    generic_obj_c_intercept(@"class", @"concrete_class_name", @"method_name", self, 0, NULL, 0, 0);
     NSLog(@"calling the replacer");
+    generic_obj_c_exit(@"class", @"concrete_class_name", @"method_name", self, 0, NULL, 0, 0);
 }
 
 -(void) swizzleFunction: (SEL)func fromClass:(Class)c {
