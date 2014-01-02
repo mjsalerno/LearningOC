@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		27007480186E04C6007A4FA1 /* MyLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2700747F186E04C6007A4FA1 /* MyLib.m */; };
 		2771C4961872026B00D21EE2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2771C4951872026B00D21EE2 /* ReplaceMe.m */; };
+		27BFB4B818760139009C7D95 /* BIItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFB4AD18760139009C7D95 /* BIItem.m */; };
+		27BFB4B918760139009C7D95 /* BIItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFB4AF18760139009C7D95 /* BIItemManager.m */; };
+		27BFB4BA18760139009C7D95 /* BILib.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFB4B118760139009C7D95 /* BILib.m */; };
+		27BFB4BB18760139009C7D95 /* BILibArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFB4B318760139009C7D95 /* BILibArg.m */; };
+		27BFB4BC18760139009C7D95 /* BILibUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFB4B718760139009C7D95 /* BILibUtils.m */; };
 		F6652ADB1868AB9300345FD3 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADA1868AB9300345FD3 /* Vehicle.m */; };
 		F6652ADE1868AD6900345FD3 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F6652ADD1868AD6900345FD3 /* Car.m */; };
 		F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */ = {isa = PBXBuildFile; fileRef = F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */; };
@@ -37,6 +42,18 @@
 		2700747F186E04C6007A4FA1 /* MyLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLib.m; sourceTree = "<group>"; };
 		2771C4941872026B00D21EE2 /* ReplaceMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceMe.h; sourceTree = "<group>"; };
 		2771C4951872026B00D21EE2 /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		27BFB4AC18760139009C7D95 /* BIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIItem.h; sourceTree = "<group>"; };
+		27BFB4AD18760139009C7D95 /* BIItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIItem.m; sourceTree = "<group>"; };
+		27BFB4AE18760139009C7D95 /* BIItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIItemManager.h; sourceTree = "<group>"; };
+		27BFB4AF18760139009C7D95 /* BIItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIItemManager.m; sourceTree = "<group>"; };
+		27BFB4B018760139009C7D95 /* BILib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILib.h; sourceTree = "<group>"; };
+		27BFB4B118760139009C7D95 /* BILib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILib.m; sourceTree = "<group>"; };
+		27BFB4B218760139009C7D95 /* BILibArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILibArg.h; sourceTree = "<group>"; };
+		27BFB4B318760139009C7D95 /* BILibArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILibArg.m; sourceTree = "<group>"; };
+		27BFB4B418760139009C7D95 /* BILibDummyStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILibDummyStruct.h; sourceTree = "<group>"; };
+		27BFB4B518760139009C7D95 /* BILibExclusives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILibExclusives.h; sourceTree = "<group>"; };
+		27BFB4B618760139009C7D95 /* BILibUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BILibUtils.h; sourceTree = "<group>"; };
+		27BFB4B718760139009C7D95 /* BILibUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BILibUtils.m; sourceTree = "<group>"; };
 		F6652AD91868AB9300345FD3 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		F6652ADA1868AB9300345FD3 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		F6652ADC1868AD6900345FD3 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
@@ -66,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27BFB4AB18760139009C7D95 /* BlockInjection */ = {
+			isa = PBXGroup;
+			children = (
+				27BFB4AC18760139009C7D95 /* BIItem.h */,
+				27BFB4AD18760139009C7D95 /* BIItem.m */,
+				27BFB4AE18760139009C7D95 /* BIItemManager.h */,
+				27BFB4AF18760139009C7D95 /* BIItemManager.m */,
+				27BFB4B018760139009C7D95 /* BILib.h */,
+				27BFB4B118760139009C7D95 /* BILib.m */,
+				27BFB4B218760139009C7D95 /* BILibArg.h */,
+				27BFB4B318760139009C7D95 /* BILibArg.m */,
+				27BFB4B418760139009C7D95 /* BILibDummyStruct.h */,
+				27BFB4B518760139009C7D95 /* BILibExclusives.h */,
+				27BFB4B618760139009C7D95 /* BILibUtils.h */,
+				27BFB4B718760139009C7D95 /* BILibUtils.m */,
+			);
+			path = BlockInjection;
+			sourceTree = "<group>";
+		};
 		F6CA3518186202A600EA8764 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +130,7 @@
 		F6CA3526186202A600EA8764 /* LearningOC */ = {
 			isa = PBXGroup;
 			children = (
+				27BFB4AB18760139009C7D95 /* BlockInjection */,
 				F66E79B8186CCFFA00A88B6B /* SynthFrac+MathOps.h */,
 				F66E79B9186CCFFB00A88B6B /* SynthFrac+MathOps.m */,
 				F6652ADD1868AD6900345FD3 /* Car.m */,
@@ -175,12 +212,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				27007480186E04C6007A4FA1 /* MyLib.m in Sources */,
+				27BFB4BB18760139009C7D95 /* BILibArg.m in Sources */,
 				F6652ADE1868AD6900345FD3 /* Car.m in Sources */,
 				F6652ADB1868AB9300345FD3 /* Vehicle.m in Sources */,
+				27BFB4B818760139009C7D95 /* BIItem.m in Sources */,
 				F69323911864F0CC00B54BB5 /* SynthFrac.m in Sources */,
+				27BFB4B918760139009C7D95 /* BIItemManager.m in Sources */,
+				27BFB4BC18760139009C7D95 /* BILibUtils.m in Sources */,
 				2771C4961872026B00D21EE2 /* ReplaceMe.m in Sources */,
 				F6CA3528186202A600EA8764 /* main.m in Sources */,
 				F6CA353818620F7200EA8764 /* Fraction.m in Sources */,
+				27BFB4BA18760139009C7D95 /* BILib.m in Sources */,
 				F66E79BA186CCFFB00A88B6B /* SynthFrac+MathOps.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -197,7 +197,7 @@ int main(int argc, const char * argv[]) {
         
         [rm replaceMe];
         //Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
-        [myLib swizzleFunction:@selector(replaceMe) fromClass:rm.class];
+        [myLib swizzle2Function:@selector(replaceMe) fromClass:rm.class];
         [rm replaceMe];
     }
     return 0;

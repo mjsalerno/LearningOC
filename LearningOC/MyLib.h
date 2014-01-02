@@ -20,5 +20,7 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
 
 -(void) swizzleFunction: (SEL)func fromClass:(Class)c;
 
+-(void) swizzle2Function: (SEL)func fromClass:(Class)c;
+
 
 @end
