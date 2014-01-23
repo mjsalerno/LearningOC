@@ -193,12 +193,16 @@ int main(int argc, const char * argv[]) {
         //cFunc();
         
         ReplaceMe *rm = [ReplaceMe new];
+        //ReplaceMe *rm2 = [ReplaceMe new];
+        
         MyLib *myLib = [MyLib new];
         
-        [rm replaceMe];
+        [rm replaceMe:6];
         //Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
-        [myLib swizzle2Function:@selector(replaceMe) fromClass:rm.class];
-        [rm replaceMe];
+        [myLib swizzle2Function:@selector(replaceMe:) fromClass:rm.class];
+        [rm replaceMe:6];
+        
+        
     }
     return 0;
 }

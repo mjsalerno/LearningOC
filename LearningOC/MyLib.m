@@ -52,6 +52,9 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
     //hook before
     [BILib injectToClass:c selector:func preprocess:^{
         
+        NSMethodSignature *ms = [BILib instanceMethodSignatureForSelector:func];
+        NSLog(@"num of args: %ld", [ms numberOfArguments]);
+        
         NSLog(@"this should be called before");
         
     }];

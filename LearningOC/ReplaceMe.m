@@ -10,7 +10,7 @@
 
 @implementation ReplaceMe
 
--(void) replaceMe {
+-(void) replaceMe:(int)n {
     NSLog(@"REPLACE ME");
 }
 
