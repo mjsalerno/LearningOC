@@ -10,7 +10,7 @@
 
 @interface ReplaceMe : NSObject
 
--(void) replaceMe:(int)n;
+-(void) replaceMe:(NSString*)n;
 -(void) withMe;
 
 @end

@@ -50,10 +50,18 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
 -(void) swizzle2Function: (SEL)func fromClass:(Class)c {
 
     //hook before
-    [BILib injectToClass:c selector:func preprocess:^{
+    [BILib injectToClass:c selector:func preprocess:^(id self, ...){
+        NSMethodSignature *ms = [c instanceMethodSignatureForSelector:func];
+        NSUInteger argc = [ms numberOfArguments];
+        NSLog(@"num of args: %lu", (unsigned long)argc);
+        va_list l;
+        va_start(l, self);
         
-        NSMethodSignature *ms = [BILib instanceMethodSignatureForSelector:func];
-        NSLog(@"num of args: %ld", [ms numberOfArguments]);
+        for ( int i = 2; i != argc; i++ ) {
+            NSLog( @"%s", [ms getArgumentTypeAtIndex:i]);
+        }
+        NSLog( @"%@ %@", self, NSStringFromSelector(_cmd));
+        NSLog( @"selector: %@ class: %s", NSStringFromSelector(func), class_getName(c));
         
         NSLog(@"this should be called before");
         
@@ -65,7 +73,6 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
         NSLog(@"This should be called after");
         
     }];
-
 }
 
 @end

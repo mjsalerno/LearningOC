@@ -197,10 +197,10 @@ int main(int argc, const char * argv[]) {
         
         MyLib *myLib = [MyLib new];
         
-        [rm replaceMe:6];
+        [rm replaceMe:@"Paul"];
         //Swizzle([ReplaceMe class], @selector(replaceMe), @selector(withMe));
         [myLib swizzle2Function:@selector(replaceMe:) fromClass:rm.class];
-        [rm replaceMe:6];
+        [rm replaceMe:@"Paul"];
         
         
     }

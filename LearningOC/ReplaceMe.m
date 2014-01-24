@@ -10,8 +10,8 @@
 
 @implementation ReplaceMe
 
--(void) replaceMe:(int)n {
-    NSLog(@"REPLACE ME");
+-(void) replaceMe:(NSString*)n {
+    NSLog(@"REPLACE ME: %@", n);
 }
 
 -(void) withMe {

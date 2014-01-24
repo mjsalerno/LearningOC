@@ -51,10 +51,11 @@
   while (numberOfArguments--) {
     NSUInteger size, alignment;
     NSGetSizeAndAlignment([signature getArgumentTypeAtIndex:index], &size, &alignment);
-    if (4 >= size) {
+    /* GREG - need to revisit... this looks all sorts of wrong */
+    if (sizeof(void*) >= size) {
       void* pval = va_arg(*pargp, void*);
       [invocation setArgument:&pval atIndex:index++];
-    } else if (8 >= size) {
+    } else if (sizeof(double) >= size) {
       double dval = va_arg(*pargp, double);
       [invocation setArgument:&dval atIndex:index++];
     } else {
