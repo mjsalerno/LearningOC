@@ -58,9 +58,9 @@ int generic_obj_c_exit(NSString* class_name, NSString *concrete_class_name, NSSt
         va_start(l, self);
         
         for ( int i = 2; i != argc; i++ ) {
-            NSLog( @"%s", [ms getArgumentTypeAtIndex:i]);
+            NSLog( @"arg type: %s", [ms getArgumentTypeAtIndex:i]);
         }
-        NSLog( @"%@ %@", self, NSStringFromSelector(_cmd));
+        NSLog( @"self: %@ _cmd: %@", self, NSStringFromSelector(_cmd));
         NSLog( @"selector: %@ class: %s", NSStringFromSelector(func), class_getName(c));
         
         NSLog(@"this should be called before");
